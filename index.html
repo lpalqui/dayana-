@@ -1,61 +1,93 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Com Saudade de Você ❤️</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      background: linear-gradient(to right, #fce4ec, #f8bbd0);
-      font-family: 'Arial', sans-serif;
-      color: #880e4f;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #ffe6e6, #ffd6e0);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
       text-align: center;
-      padding: 50px;
+      animation: fadeIn 2s ease;
     }
 
     h1 {
+      color: #d81b60;
       font-size: 3em;
-      margin-bottom: 10px;
+      margin-bottom: 0.2em;
+      animation: slideDown 1s ease forwards;
     }
 
     p {
+      color: #6a1b9a;
       font-size: 1.3em;
       max-width: 600px;
-      margin: 20px auto;
+      margin: 10px auto;
       line-height: 1.6;
+      animation: slideUp 1.2s ease forwards;
     }
 
     .heart {
-      font-size: 3em;
+      font-size: 3.5em;
+      margin-top: 20px;
       animation: pulse 1s infinite;
-      margin-top: 30px;
-    }
-
-    @keyframes pulse {
-      0% { transform: scale(1); }
-      50% { transform: scale(1.2); }
-      100% { transform: scale(1); }
     }
 
     .footer {
       margin-top: 40px;
       font-size: 0.9em;
       color: #ad1457;
+      opacity: 0.8;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(30px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.3); }
+      100% { transform: scale(1); }
     }
   </style>
 </head>
 <body>
-  <h1>Oi, Dayana ❤️</h1>
-  <p>Ou melhor dizendo, meu pão de queijo com geleia de goiaba</p>
-  <p>Você está longe, mas nunca saiu do meu coração.</p>
-  <p>Sinto muito a sua falta. Cada dia sem você parece mais longo que o anterior</p>
-  <p>E a cada segundo que passa, mais eu quero estar com vc</p>
-  <p>Amo vc muito mais do que palavras conseguem expressar.</p>
-  <p>Volta logo, tá?</p>
-  <div class="heart">💗</div>
-
+  <h1>Oi, meu amor ❤️</h1>
+  <p>
+    A distância pode separar nossos corpos, mas nunca nossos corações.
+  </p>
+  <p>
+    Sinto sua falta todos os dias. Espero que essa página leve até você um pedacinho do meu carinho.
+  </p>
+  <p>
+    Te amo imensamente. Estou contando os dias pra te ver de novo. 💕
+  </p>
+  <div class="heart">💖</div>
   <div class="footer">
-    Feito com amor do Brasil para os EUA 🌎✨
-	by seu carioca favorito (não conta pra sua amiga)
+    Com amor, diretamente do Brasil para os Estados Unidos 🌍✨
   </div>
 </body>
 </html>
