@@ -3,91 +3,106 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Com Saudade de Você ❤️</title>
+  <title>Para Dayana 💖</title>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
   <style>
     * {
       box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
     body {
-      margin: 0;
-      padding: 0;
-      background: linear-gradient(to right, #ffe6e6, #ffd6e0);
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #fff0f5, #e0c3fc);
+      font-family: 'Montserrat', sans-serif;
+      color: #5a005a;
+      min-height: 100vh;
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
-      min-height: 100vh;
-      text-align: center;
+      padding: 40px;
       animation: fadeIn 2s ease;
     }
 
+    .container {
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+      max-width: 700px;
+      text-align: center;
+      animation: slideUp 1.2s ease forwards;
+      opacity: 0;
+    }
+
     h1 {
-      color: #d81b60;
-      font-size: 3em;
-      margin-bottom: 0.2em;
-      animation: slideDown 1s ease forwards;
+      font-family: 'Great Vibes', cursive;
+      font-size: 3.5em;
+      color: #d63384;
+      margin-bottom: 20px;
+      animation: popIn 1.3s ease forwards;
+      opacity: 0;
     }
 
     p {
-      color: #6a1b9a;
-      font-size: 1.3em;
-      max-width: 600px;
-      margin: 10px auto;
+      font-size: 1.2em;
       line-height: 1.6;
-      animation: slideUp 1.2s ease forwards;
+      margin: 15px 0;
+      color: #5f005f;
+      animation: fadeInText 2s ease forwards;
+      opacity: 0;
     }
 
     .heart {
-      font-size: 3.5em;
-      margin-top: 20px;
-      animation: pulse 1s infinite;
+      font-size: 4em;
+      margin-top: 30px;
+      animation: pulse 1.5s infinite ease-in-out;
     }
 
     .footer {
       margin-top: 40px;
       font-size: 0.9em;
-      color: #ad1457;
-      opacity: 0.8;
+      color: #9a4d9a;
     }
 
+    /* Animations */
     @keyframes fadeIn {
       from { opacity: 0; }
       to { opacity: 1; }
     }
 
-    @keyframes slideDown {
-      from { transform: translateY(-30px); opacity: 0; }
+    @keyframes slideUp {
+      from { transform: translateY(40px); opacity: 0; }
       to { transform: translateY(0); opacity: 1; }
     }
 
-    @keyframes slideUp {
-      from { transform: translateY(30px); opacity: 0; }
-      to { transform: translateY(0); opacity: 1; }
+    @keyframes popIn {
+      0% { transform: scale(0.8); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes fadeInText {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     @keyframes pulse {
       0% { transform: scale(1); }
-      50% { transform: scale(1.3); }
+      50% { transform: scale(1.2); }
       100% { transform: scale(1); }
     }
   </style>
 </head>
 <body>
-  <h1>Oi, meu amor ❤️</h1>
-  <p>
-    A distância pode separar nossos corpos, mas nunca nossos corações.
-  </p>
-  <p>
-    Sinto sua falta todos os dias. Espero que essa página leve até você um pedacinho do meu carinho.
-  </p>
-  <p>
-    Te amo imensamente. Estou contando os dias pra te ver de novo. 💕
-  </p>
-  <div class="heart">💖</div>
-  <div class="footer">
-    Com amor, diretamente do Brasil para os Estados Unidos 🌍✨
+  <div class="container">
+    <h1>Para você, Dayana 💌</h1>
+    <p>Mesmo a quilômetros de distância, você está em cada batida do meu coração.</p>
+    <p>Dayana, queria te lembrar que minha saudade não cabe em palavras, então fiz essa página só pra você.</p>
+    <p>Volta logo, porque minha vida é mais bonita com você por perto. ❤️</p>
+    <div class="heart">💖</div>
+    <div class="footer">
+      Criado com amor — do Brasil para você, Dayana, aí nos EUA 🌍✨
+    </div>
   </div>
 </body>
 </html>
